@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.outer {
+    display: table;
+}
+
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.nav {
+    height: 100px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.nav-left {
+    float: left;
+    display: inline-block;
+    color: #2c3e50;
+}
+
+.nav-right {
+    float: right;
+    display: inline-block;
+}
+
+.nav-icon {
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.fa-twitter {
+    color: #4099FF;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-google-plus {
+    color: #DC4E41;
+}
+
+.section {
+    width: 100%;
+    height: calc(100% - 100px);
+    background: linear-gradient(to bottom, #bdc3c7 20%, #ecf0f1 0%);
+}
+
+.sec-left {
+    margin-left: 20%;
+    float: left;
+    width: 30%;
+}
+
+.sec-right {
+    margin-right: 20%;
+    float: right;
+    width: 30%;
+}
+
+.drone-img {
+    width: 50%;
+    border-radius: 50%;
+}
