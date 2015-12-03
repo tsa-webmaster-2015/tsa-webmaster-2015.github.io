@@ -117,9 +117,9 @@ body {
     font-family: Slim Joe;
 }
 
-.drones {
+.tsa {
     height: 100vh;
-    color: white;
+    color: #ecf0f1;
     font-family: Open Sans;
     margin-top: 323px;
     background-image: url("../imgs/students.jpg");
@@ -132,4 +132,11 @@ body {
     padding-top: calc(50vh - 70px);
     padding-left: 15vw;
     padding-right: 15vw;
+}
+
+.footer {
+    color: #ecf0f1;
+    text-align: center;
+    background-color: #2980b9;
+    padding: 40px 20vw;
 }
