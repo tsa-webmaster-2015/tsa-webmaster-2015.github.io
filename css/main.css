@@ -122,12 +122,14 @@ body {
     color: white;
     font-family: Open Sans;
     margin-top: 323px;
-    background-image: url("http://images.catchnews.com/uploads/images/2015/07/29/derp-lead-gif-hurr-durr-derp-face-err-nurrr-terrnnis-burrrll.gif");
+    background-image: url("../imgs/students.jpg");
     background-size: cover;
     text-align: center;
 }
 
-.drones p {
-    font-size: 100px;
-    padding-top: calc(50vh - 100px);
+.tsa p {
+    font-size: 70px;
+    padding-top: calc(50vh - 70px);
+    padding-left: 15vw;
+    padding-right: 15vw;
 }
