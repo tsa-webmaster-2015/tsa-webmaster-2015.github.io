@@ -30,9 +30,9 @@ body {
 
 .nav {
     width: 100%;
-    background-color: #2980b9;
+    background-color: #ecf0f1;
     display: table;
-    color: #ecf0f1;
+    color: #333;
 }
 
 .navitem {
@@ -42,6 +42,7 @@ body {
     font-family: Slim Joe;
     transition: .3s background;
     cursor: pointer;
+    letter-spacing: 2px;
 }
 
 .navitem:hover {
