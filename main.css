@@ -21,22 +21,40 @@ body {
     line-height: 1.8;
 }
 
-.inner {
-    vertical-align: middle;
-    margin: 0;
-    position: relative;
-    float: left;
-}
-
-.nav {
+nav {
+    position: fixed;
+    z-index: 1000;
     width: 100%;
     background-color: #ecf0f1;
-    display: table;
     color: #333;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    font-weight: bold;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    box-shadow: 0 0 10px 0 black;
+    transition: all 0.4s ease;
 }
 
 .navitem {
     display: table-cell;
+    margin: 0;
     font-size: 20px;
     padding: 35px 60px;
     font-family: Slim Joe;
@@ -45,18 +63,26 @@ body {
     letter-spacing: 2px;
 }
 
-.navitem:hover {
+.nav-small .navitem {
+    padding: 4px 60px;
+}
+
+.nav-small .nav-right {
+    display: none;
+}
+
+.nav-big .navitem:hover {
     background-color: #3498db;
 }
 
 .nav-left {
     float: left;
-    display: inline-block;
+    display: inline;
 }
 
 .nav-right {
+    display: inline;
     float: right;
-    display: table;
     font-size: 25px;
     padding: 25px;
 }
@@ -64,7 +90,6 @@ body {
 .nav-icon {
     padding: 15px 20px;
     font-size: 25px;
-    display: table-cell;
     text-align: center;
     cursor: pointer;
 }
