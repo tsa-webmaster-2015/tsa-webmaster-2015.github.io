@@ -77,12 +77,20 @@ body {
     text-align: center;
 }
 img {
+    -webkit-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
     -webkit-box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.75);
     box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.75);
 }
 
 .gif-frame img, .already-has-shadow {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
@@ -108,5 +116,11 @@ img {
     }
     .drone-gif {
         text-align: center;
+    }
+    img {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
     }
 }
