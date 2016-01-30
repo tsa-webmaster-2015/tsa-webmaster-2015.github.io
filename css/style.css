@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
 html,
 body {
     height: 100%;
@@ -11,16 +10,13 @@ body {
     font-family: 'Lato', sans-serif;
     color: #333;
 }
-
 .outer {
     display: table;
 }
-
 .inner {
     display: table-cell;
     vertical-align: middle;
 }
-
 .nav {
     width: 100%;
     height: 100px;
@@ -28,56 +24,56 @@ body {
     box-shadow: 0 1px 2px #c7c7cc;
     text-align: center;
 }
-
 .nav-item {
     display: inline-block;
     margin: 0 20px;
     letter-spacing: 2px;
     font-size: 15px;
 }
-
 .nav-item a {
     color: #333;
     text-decoration: none;
     transition: all .3s ease;
 }
-
 .nav-item a:hover {
     transition: all .3s ease;
     color: #aaa;
 }
-
 .main {
     width: 60%;
     margin: 50px auto;
 }
-
 .main h1,
 .main h2 {
     font-weight: 400;
     color: #333;
 }
-
 .main p {
     color: #555;
     margin: 15px 0;
     line-height: 1.6em;
 }
-
 .main ul {
     margin: 5px 0;
 }
-
 .main img {
     margin: 15px 0;
     width: 100%;
 }
-
 .main li {
     line-height: 1.6em;
     list-style-position: inside;
 }
-
+.drone-gif .gif-frame {
+    width: 40%;
+    max-height: 190px;
+    display: inline-block;
+    margin: 10px;
+    overflow-y: hidden;
+}
+.drone-gif {
+    text-align: center;
+}
 @media (max-width: 50em) {
     .nav {
         height: auto;
@@ -90,5 +86,14 @@ body {
     .main {
         width: 90%;
         margin: 25px auto;
+    }
+    .drone-gif .gif-frame {
+        width: 100%;
+        max-height: none;
+        margin: 0;
+        overflow-y: auto;
+    }
+    .drone-gif {
+        text-align: center;
     }
 }
