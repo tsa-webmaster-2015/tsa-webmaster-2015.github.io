@@ -107,7 +107,7 @@ img {
     }
     .main {
         width: 90%;
-        margin: 25px auto;
+        margin: 25px auto 50px;
     }
     .drone-gif .gif-frame {
         width: 100%;
