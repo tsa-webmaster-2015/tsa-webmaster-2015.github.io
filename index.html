@@ -1,38 +1,30 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='app'>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <base href="/">
     <title>TSA Webmaster 2015</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link rel="icon" href="/imgs/favicon.ico">
     <meta name="description" content="Drones">
 </head>
 
 <body>
-    <div class="nav outer">
+    <nav class="outer">
         <div class="inner">
-            <div class="nav-item">
-                <a href="/">HOME</a>
-            </div>
-            <div class="nav-item">
-                <a href="/uses">USES</a>
-            </div>
-            <div class="nav-item">
-                <a href="/regulations">REGULATIONS</a>
-            </div>
-            <div class="nav-item">
-                <a href="/technology">TECHNOLOGY</a>
-            </div>
+            <span id="home">home</span>
+            <span id="uses">uses</span>
+            <span id="regulations">regulations</span>
+            <span id="technology">technology</span>
         </div>
-    </div>
-    <div ng-view></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular-route.js"></script>
-    <script src="/js/index.js"></script>
+    </nav>
+    <div id="content"></div>
+    <div id="backToTop" hidden>&#8679;</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="application.js"></script>
 </body>
 
 </html>

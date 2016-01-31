@@ -1,4 +1,4 @@
-hat* {
+* {
     margin: 0;
     padding: 0;
 }
@@ -25,63 +25,65 @@ body {
     vertical-align: middle;
 }
 
-.nav {
+nav {
     width: 100%;
     height: 100px;
     background-color: #ecf0f1;
+    -webkit-box-shadow: 0 1px 2px #c7c7cc;
     box-shadow: 0 1px 2px #c7c7cc;
+    -mox-box-shadow: 0 1px 2px #c7c7cc;
     text-align: center;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
 
-.nav-item {
+nav span {
     display: inline-block;
     margin: 0 20px;
     letter-spacing: 2px;
     font-size: 15px;
-}
-
-.nav-item a {
     color: #333;
     text-decoration: none;
     transition: all .3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
-.nav-item a:hover {
+nav span:hover {
     transition: all .3s ease;
     color: #aaa;
 }
 
-.main {
+#content {
     width: 60%;
     margin: 50px auto;
+    z-index: 1;
 }
 
-.main h1,
-.main h2 {
+#content h1,
+#content h2 {
     font-weight: 400;
     color: #333;
 }
 
-.main p {
+#content p {
     color: #555;
     margin: 15px 0;
     line-height: 1.6em;
 }
 
-.main ul {
+#content ul {
     margin: 5px 0;
     color: #555;
 }
 
-.main img {
+#content img {
     margin: 15px 0;
     width: 100%;
 }
 
-.main li {
+#content li {
     line-height: 1.6em;
     list-style-position: inside;
 }
@@ -98,7 +100,8 @@ body {
     text-align: center;
 }
 
-img {
+img,
+#backToTop {
     -webkit-transform: scale(0.95);
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95);
@@ -128,16 +131,33 @@ a:hover {
     text-decoration: underline;
 }
 
+#backToTop {
+    z-index: 2;
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    right: 75px;
+    bottom: 50px;
+    background-color: #aaa;
+    color: #ecf0f1;
+    font-size: 5em;
+    text-align: center;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 @media (max-width: 50em) {
-    .nav {
+    nav {
         height: auto;
         padding: 10px 0;
     }
-    .nav-item {
+    nav span {
         display: block;
         padding: 10px 0;
     }
-    .main {
+    #content {
         width: 90%;
         margin: 25px auto 50px;
     }
@@ -155,5 +175,8 @@ a:hover {
         -ms-transform: scale(1);
         -o-transform: scale(1);
         transform: scale(1);
+    }
+    #backToTop {
+        left: -400%;
     }
 }
