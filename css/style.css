@@ -1,4 +1,4 @@
-* {
+hat* {
     margin: 0;
     padding: 0;
 }
@@ -6,10 +6,6 @@
 *::selection {
     background-color: #9b59b6;
     color: #ecf0f1;
-}
-
-a::selection {
-    text-decoration: underline;
 }
 
 html,
