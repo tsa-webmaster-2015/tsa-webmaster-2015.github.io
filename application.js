@@ -32,7 +32,7 @@ $(document).ready(function () {
         if (kkeys.toString().indexOf(konami) >= 0) {
             $(document).unbind('keydown', arguments.callee);
             alert('AYY LMAO');
-            window.location = '//ayylmao.rocks'
+            window.location = 'http://ayylmao.rocks'
         }
     });
 });
