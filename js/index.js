@@ -1,7 +1,8 @@
 console.log("    ____   ____   ____   _   __ ______ _____\n   / __ \\ / __ \\ / __ \\ / | / // ____// ___/\n  / / / // /_/ // / / //  |/ // __/   \\__ \\ \n / /_/ // _, _// /_/ // /|  // /___  ___/ / \n/_____//_/ |_| \\____//_/ |_//_____/ /____/  \n                                            ")
+
 var app = angular.module('app', ['ngRoute']);
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/',{
         templateUrl: '../partials/home.html'
@@ -18,4 +19,5 @@ app.config(function($routeProvider) {
     .otherwise({
         redirectTo: '/'
     });
+    $locationProvider.html5Mode(true);
 })
