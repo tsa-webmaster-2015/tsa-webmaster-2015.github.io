@@ -88,7 +88,7 @@ nav span:hover {
     list-style-position: inside;
 }
 
-.drone-gif .gif-frame {
+.gif-frame {
     width: 40%;
     max-height: 190px;
     display: inline-block;
@@ -165,7 +165,7 @@ a:hover {
         width: 90%;
         margin: 25px auto 50px;
     }
-    .drone-gif .gif-frame {
+    .gif-frame {
         width: 100%;
         max-height: none;
         margin: 0;
@@ -179,5 +179,9 @@ a:hover {
         -ms-transform: scale(1);
         -o-transform: scale(1);
         transform: scale(1);
+    }
+    #backToTop {
+        right: 25px;
+        bottom: 25px;
     }
 }
