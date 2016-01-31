@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-*::hover {
+*::selection {
     background-color: #9b59b6;
     color: #ecf0f1;
 }
