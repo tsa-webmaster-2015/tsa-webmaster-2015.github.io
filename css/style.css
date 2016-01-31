@@ -8,6 +8,10 @@
     color: #ecf0f1;
 }
 
+a::selectoin {
+    text-decoration: underline;
+}
+
 html,
 body {
     height: 100%;
