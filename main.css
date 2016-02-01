@@ -16,11 +16,13 @@ body {
     color: #333;
 }
 
-.outer {
+.outer,
+.images a {
     display: table;
 }
 
-.inner {
+.inner,
+.images img {
     display: table-cell;
     vertical-align: middle;
 }
@@ -68,6 +70,7 @@ nav span:hover {
 }
 
 #content p {
+    font-size: 1.3em;
     color: #555;
     margin: 15px 0;
     line-height: 1.6em;
@@ -81,6 +84,16 @@ nav span:hover {
 #content img {
     margin: 15px 0;
     width: 100%;
+}
+
+.images img {
+    margin: 0 20px 0 0 !important;
+    width: 60px !important;
+    display: inline-block;
+}
+
+.images a {
+    display: inline-block !important;
 }
 
 #content li {
@@ -150,6 +163,32 @@ a:hover {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+}
+
+.footer {
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.footer span {
+    margin: 0 10px;
+}
+
+.back-to-main {
+    position: relative;
+    left: 25px;
+    top: 25px;
+    font-size: 1.25em;
+}
+
+.spacer {
+    height: 50px;
+    width: 100%;
+}
+
+.works a {
+    display: block;
+    margin-top: 15px;
 }
 
 @media (max-width: 50em) {
