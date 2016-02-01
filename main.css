@@ -203,6 +203,7 @@ a:hover {
     #content {
         width: 90%;
         margin: 25px auto 50px;
+        padding: 0px;
     }
     .gif-frame {
         width: 100%;
