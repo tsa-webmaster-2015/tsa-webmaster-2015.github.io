@@ -223,4 +223,11 @@ a:hover {
         right: 25px;
         bottom: 25px;
     }
+    .footer span:nth-child(even) {
+        display: none;
+    }
+    .footer span {
+        display: block;
+        margin-top: 10px;
+    }
 }
