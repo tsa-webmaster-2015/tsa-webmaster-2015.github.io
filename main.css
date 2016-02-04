@@ -94,6 +94,7 @@ nav span:hover {
 
 .images a {
     display: inline-block !important;
+    margin-right: 10px;
 }
 
 #content li {
@@ -186,9 +187,15 @@ a:hover {
     width: 100%;
 }
 
-.works a {
+.works a,
+.sites span {
     display: block;
     margin-top: 15px;
+}
+
+.sites a {
+    display: inline-block;
+    margin-right: 10px;
 }
 
 @media (max-width: 50em) {
@@ -230,5 +237,13 @@ a:hover {
     .footer span {
         display: block;
         margin-top: 10px;
+    }
+    .images a {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .images span {
+        display: block;
     }
 }
