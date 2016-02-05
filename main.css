@@ -228,7 +228,7 @@ a:hover {
         transform: scale(1);
     }
     #backToTop {
-        right: 25px;
+        left: -5000px;
         bottom: 25px;
     }
     .footer span:nth-child(even) {
